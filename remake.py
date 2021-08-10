@@ -15,5 +15,12 @@ class Team:
 	def crear():
 		print("creando equipo")
 		a=Team()
+		a.conductor=raw_input("Por favor introduzca la posiciona o carril a elegir\n")
+		a.carril=raw_input("Por favor introduzca el equipo de escuderia\n")
+		a.carril=raw_input("Por favor introduzca la posiciona o carril a elegir\n")
+		lista.append(a)
+		pass
 
+	def mostrar():
+		print("visual")	
 		pass
