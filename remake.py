@@ -23,9 +23,9 @@ def mostrar():
 def crear():
 	print("creando equipo")
 	a=Team()
-	a.conductor=raw_input("Por favor introduzca la posiciona o carril a elegir\n")
-	a.carro=raw_input("Por favor introduzca el equipo de escuderia\n")
-	a.carril=raw_input("Por favor introduzca la posiciona o carril a elegir\n")
+	a.conductor=input("Por favor introduzca su nombre a elegir\n")
+	a.carro=input("Por favor introduzca el equipo de escuderia\n")
+	a.carril=input("Por favor introduzca la posiciona o carril a elegir\n")
 	lista.append(a)
 	pass
 
