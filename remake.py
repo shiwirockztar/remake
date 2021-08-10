@@ -29,23 +29,40 @@ def crear():
 	lista.append(a)
 	pass
 
+def buscar():
+	print("buscando")
+	pass
+
+def salir():
+	print("saliendo")
+	pass
+
 def menu():
 	op=0
 	salir=4
 	while op!=salir:
-		print('''
-         Menu :
-0>montoya	 3>hamilton	 
-1>vettel         4>alonzo
-2>schumacher     5>speede 
-''')
+		print("Menu")
+		print("1.- Registrar jugador")
+		print("2.- Mostrar competidores")
+		print("3.- Buscar jugador")
+		print("4.- Salir")
+		op=int(input("Por favor introduzca la opcion a elegir\n"))
+		if op==1:
+			crear()
+			pass	
+		elif op==2:
+			mostrar()
+			pass
+		elif op==3:
+			buscar()
+			pass
+		elif op==4:
+			salir()
+			pass	
 		pass
+
 	pass
 
-menuC='''
-         Menu :
-0>montoya	 3>hamilton	 
-1>vettel         4>alonzo
-2>schumacher     5>speede 
-'''
+
 	
+menu()
