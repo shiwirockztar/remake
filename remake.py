@@ -12,15 +12,40 @@ class Team:
 	conductor=""
 	carril=0
 
-	def crear():
-		print("creando equipo")
-		a=Team()
-		a.conductor=raw_input("Por favor introduzca la posiciona o carril a elegir\n")
-		a.carril=raw_input("Por favor introduzca el equipo de escuderia\n")
-		a.carril=raw_input("Por favor introduzca la posiciona o carril a elegir\n")
-		lista.append(a)
-		pass
 
-	def mostrar():
-		print("visual")	
+def mostrar():
+	print("visual")
+	for a in lista:
+		print("El jugador ",a.conductor," juega con el carro ",a.carro,"en el carril ",a.carril) 
+		pass	
+	pass
+
+def crear():
+	print("creando equipo")
+	a=Team()
+	a.conductor=raw_input("Por favor introduzca la posiciona o carril a elegir\n")
+	a.carro=raw_input("Por favor introduzca el equipo de escuderia\n")
+	a.carril=raw_input("Por favor introduzca la posiciona o carril a elegir\n")
+	lista.append(a)
+	pass
+
+def menu():
+	op=0
+	salir=4
+	while op!=salir:
+		print('''
+         Menu :
+0>montoya	 3>hamilton	 
+1>vettel         4>alonzo
+2>schumacher     5>speede 
+''')
 		pass
+	pass
+
+menuC='''
+         Menu :
+0>montoya	 3>hamilton	 
+1>vettel         4>alonzo
+2>schumacher     5>speede 
+'''
+	
