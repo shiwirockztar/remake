@@ -18,6 +18,7 @@ def mostrar():
 	for a in lista:
 		print("El jugador ",a.conductor," juega con el carro ",a.carro,"en el carril ",a.carril) 
 		pass	
+	os.system('pause')
 	pass
 
 def crear():
@@ -29,8 +30,18 @@ def crear():
 	lista.append(a)
 	pass
 
+def jugar():
+	print("jugando")
+	pass
+
 def buscar():
-	print("buscando")
+	filtro=input("Por favor introduzca palabra a buscar\n")
+	for a in lista:
+		if a.conductor==filtro or a.carro==filtro:
+			print("El jugador ",a.conductor," juega con el carro ",a.carro,"en el carril ",a.carril)
+			pass
+		pass
+	os.system('pause')	
 	pass
 
 def salir():
@@ -41,10 +52,11 @@ def menu():
 	op=0
 	salir=4
 	while op!=salir:
+		os.system('cls')
 		print("Menu")
 		print("1.- Registrar jugador")
 		print("2.- Mostrar competidores")
-		print("3.- Buscar jugador")
+		print("3.- Jugar")
 		print("4.- Salir")
 		op=int(input("Por favor introduzca la opcion a elegir\n"))
 		if op==1:
@@ -54,11 +66,16 @@ def menu():
 			mostrar()
 			pass
 		elif op==3:
-			buscar()
+			jugar()
 			pass
 		elif op==4:
 			salir()
-			pass	
+			pass
+		#opcion oculta
+		if op==9:
+			buscar()
+			pass
+	
 		pass
 
 	pass
